@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محلات البن البرازيلي | Brazilian Coffee Stores - منذ 1929</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coffee: {
+                            dark: '#1a0f0a',
+                            medium: '#2c1810',
+                            accent: '#d4af37',
+                            light: '#f5f0eb',
+                            gold: '#c5a059'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-coffee-dark text-coffee-light font-cairo antialiased selection:bg-coffee-accent selection:text-coffee-dark">
+
+    <!-- Header & Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-coffee-dark/90 backdrop-blur-md border-b border-coffee-accent/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 rounded-full bg-coffee-accent flex items-center justify-center text-coffee-dark font-900 text-xl">
+                    BC
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-wider text-white">البن البرازيلي</span>
+                    <span class="block text-xs text-coffee-accent">Since 1929</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-medium">
+                <a href="#hero" class="hover:text-coffee-accent transition">الرئيسية</a>
+                <a href="#about" class="hover:text-coffee-accent transition">قصتنا</a>
+                <a href="#menu" class="hover:text-coffee-accent transition">القائمة</a>
+                <a href="#branches" class="hover:text-coffee-accent transition">فروعنا</a>
+                <a href="#contact" class="hover:text-coffee-accent transition">تواصل معنا</a>
+            </nav>
+            <div class="flex items-center space-x-4 space-x-reverse">
+                <a href="#menu" class="bg-coffee-accent text-coffee-dark px-5 py-2.5 rounded-full font-bold text-sm hover:bg-white transition shadow-lg shadow-coffee-accent/20">
+                    اطلب الآن
+                </a>
+            </div>
+        </div>
+    </header>
+
+    
+<section id="hero" class="relative min-h-screen flex items-center justify-center bg-cover bg-center pt-20" style="background-image: linear-gradient(to bottom, rgba(26,15,10,0.85), rgba(26,15,10,0.95)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=1920');">
+    <div class="max-w-4xl mx-auto text-center px-4 z-10">
+        
+        
+        <span class="inline-block px-4 py-1.5 rounded-full bg-coffee-accent/10 border border-coffee-accent/30 text-coffee-accent text-sm font-semibold mb-8 tracking-wide">
+            عراقة الإسكندرية منذ 1929 ☕
+        </span>
+
+        <!-- Main Title with adjusted line-height (leading-relaxed) -->
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-900 text-white mb-8 leading-[1.3] sm:leading-[1.4]">
+            أصالة المذاق الرفيع في كل
+            <span class="block mt-2 text-coffee-accent">فنجان قهوة</span>
+        </h1>
+
+        
+        <p class="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-300 leading-relaxed">
+            نقدم أجود أنواع البن البرازيلي المحمص بعناية فائقة، بالإضافة إلى أشهى المخبوزات الطازجة والحلويات الشرقية والغربية.
+        </p>
+
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#menu" class="w-full sm:w-auto bg-coffee-accent text-coffee-dark px-8 py-4 rounded-xl font-bold text-base hover:bg-white transition shadow-xl">
+                تصفح القائمة الكاملة
+            </a>
+            <a href="#about" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-base transition">
+                تعرف على قصتنا
+            </a>
+        </div>
+
+    </div>
+</section>
+
+   
+    <section id="why-us" class="py-20 bg-coffee-medium border-t border-coffee-accent/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-coffee-accent font-bold text-sm tracking-widest uppercase mb-2 block">عراقة المذاق والخدمة</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">لماذا البن البرازيلي؟</h2>
+            <p class="text-coffee-accent/80 font-sans text-sm tracking-wide" dir="ltr">Why Brazilian Coffee Stores?</p>
+        </div>
+
+        <!-- Modern Cards Grid (6 Clean Cards) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-coffee-dark/60 p-8 rounded-3xl border border-coffee-accent/15 hover:border-coffee-accent/50 transition duration-300 hover:-translate-y-1 shadow-lg flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-coffee-accent/10 text-coffee-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-coffee-accent group-hover:text-coffee-dark transition duration-300">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">أجود أنواع البن</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">ننتقي ونحمص أفضل وأجود حبوب البن البرازيلي الفاخر لعشاق القهوة الأصيلة.</p>
+                </div>
+                <div class="pt-4 border-t border-white/5 text-left font-sans" dir="ltr">
+                    <p class="text-xs text-coffee-accent/80 font-medium">Finest & highest quality Brazilian coffee beans.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-coffee-dark/60 p-8 rounded-3xl border border-coffee-accent/15 hover:border-coffee-accent/50 transition duration-300 hover:-translate-y-1 shadow-lg flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-coffee-accent/10 text-coffee-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-coffee-accent group-hover:text-coffee-dark transition duration-300">
+                        <i class="fa-solid fa-cookie-bite"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">مخبوزات وحلويات طازجة</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">تشكيلة واسعة وأنيقة من المخبوزات والحلويات والمشروبات الساخنة والباردة.</p>
+                </div>
+                <div class="pt-4 border-t border-white/5 text-left font-sans" dir="ltr">
+                    <p class="text-xs text-coffee-accent/80 font-medium">Great selection of fresh pastries, bakery & beverages.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-coffee-dark/60 p-8 rounded-3xl border border-coffee-accent/15 hover:border-coffee-accent/50 transition duration-300 hover:-translate-y-1 shadow-lg flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-coffee-accent/10 text-coffee-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-coffee-accent group-hover:text-coffee-dark transition duration-300">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">باريستا وشيفات محترفون</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">فريق من أفضل الشيفات ومعدي القهوة أصحاب الخبرة والمهارات العالية.</p>
+                </div>
+                <div class="pt-4 border-t border-white/5 text-left font-sans" dir="ltr">
+                    <p class="text-xs text-coffee-accent/80 font-medium">Skilled baristas & top-tier professional chefs.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-coffee-dark/60 p-8 rounded-3xl border border-coffee-accent/15 hover:border-coffee-accent/50 transition duration-300 hover:-translate-y-1 shadow-lg flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-coffee-accent/10 text-coffee-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-coffee-accent group-hover:text-coffee-dark transition duration-300">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">خدمة وتدريب متكامل</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">طاقم مدرب ومكرس بالكامل لتقديم أفضل خدمة واستقبال لعملائنا.</p>
+                </div>
+                <div class="pt-4 border-t border-white/5 text-left font-sans" dir="ltr">
+                    <p class="text-xs text-coffee-accent/80 font-medium">Fully trained team dedicated to exceptional service.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-coffee-dark/60 p-8 rounded-3xl border border-coffee-accent/15 hover:border-coffee-accent/50 transition duration-300 hover:-translate-y-1 shadow-lg flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-coffee-accent/10 text-coffee-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-coffee-accent group-hover:text-coffee-dark transition duration-300">
+                        <i class="fa-solid fa-guitar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">موسيقى وأجواء راقية</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">نوفر أجمل الأجواء مع عزف مباشر وألحان هادئة على الجيتار والعود.</p>
+                </div>
+                <div class="pt-4 border-t border-white/5 text-left font-sans" dir="ltr">
+                    <p class="text-xs text-coffee-accent/80 font-medium">Live guitar & oud music in a relaxing atmosphere.</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-coffee-dark/60 p-8 rounded-3xl border border-coffee-accent/15 hover:border-coffee-accent/50 transition duration-300 hover:-translate-y-1 shadow-lg flex flex-col justify-between group">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-coffee-accent/10 text-coffee-accent flex items-center justify-center text-2xl mb-6 group-hover:bg-coffee-accent group-hover:text-coffee-dark transition duration-300">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">عروض وضيافة خاصة</h3>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">تقديم عروض حصرية وخدمات ضيافة مميزة تناسب جميع المناسبات.</p>
+                </div>
+                <div class="pt-4 border-t border-white/5 text-left font-sans" dir="ltr">
+                    <p class="text-xs text-coffee-accent/80 font-medium">Exclusive offers & premium catering for all occasions.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- History Note Banner at Bottom -->
+        <div class="mt-16 bg-gradient-to-r from-coffee-dark via-coffee-medium to-coffee-dark p-6 rounded-2xl border border-coffee-accent/20 text-center shadow-xl">
+            <p class="text-sm sm:text-base text-gray-200 font-semibold">
+                "في عام 1929م أُفتتح محل البن البرازيلي وكان أول متجر لبيع البن المطحون في الإسكندرية، وفي عام 1959م أدخل محمد صبحي محامص ومطاحن البن الآلي."
+            </p>
+            <p class="text-xs text-coffee-accent font-sans mt-2 tracking-widest uppercase" dir="ltr">Established in 1929 | Alexandria, Egypt</p>
+        </div>
+
+    </div>
+</section>
+    
+    <section id="menu" class="py-24 bg-coffee-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-coffee-accent font-bold text-sm tracking-widest uppercase mb-2 block">قائمة التذوق</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">اكتشف منتجاتنا المتميزة</h2>
+                <p class="text-gray-400">تشكيلة واسعة من القهوة الفاخرة، المخبوزات الطازجة، والحلويات الشهية.</p>
+            </div>
+
+            <!-- Categories Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-coffee-medium rounded-2xl overflow-hidden border border-coffee-accent/10 hover:border-coffee-accent/40 transition group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=600" alt="قهوة إسبريسو وبن" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-coffee-dark/80 backdrop-blur-md text-coffee-accent text-xs font-bold px-3 py-1 rounded-full border border-coffee-accent/20">مميز</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">البن البرازيلي الفاخر</h3>
+                        <p class="text-gray-400 text-sm mb-4">حبوب بن محضرة ومحمصة بعناية لطعم غني ورائحة مميزة تدوم.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-coffee-accent font-bold">حسب الوزن</span>
+                            <button class="bg-coffee-accent/10 hover:bg-coffee-accent text-coffee-accent hover:text-coffee-dark px-4 py-2 rounded-xl text-sm font-bold transition">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-coffee-medium rounded-2xl overflow-hidden border border-coffee-accent/10 hover:border-coffee-accent/40 transition group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=80&w=600" alt="الكابتشينو" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">كابتشينو ولاتيه</h3>
+                        <p class="text-gray-400 text-sm mb-4">مزيج مثالي من الإسبريسو الغني والحليب المخفوق برغوة ناعمة.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-coffee-accent font-bold">مشروبات ساخنة</span>
+                            <button class="bg-coffee-accent/10 hover:bg-coffee-accent text-coffee-accent hover:text-coffee-dark px-4 py-2 rounded-xl text-sm font-bold transition">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-coffee-medium rounded-2xl overflow-hidden border border-coffee-accent/10 hover:border-coffee-accent/40 transition group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=600" alt="مخبوزات وكرواسون" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">المخبوزات والكرواسون</h3>
+                        <p class="text-gray-400 text-sm mb-4">كرواسون طازج ومقرمش يومياً ومخبوزات متنوعة تناسب إفطارك.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-coffee-accent font-bold">طازج يومياً</span>
+                            <button class="bg-coffee-accent/10 hover:bg-coffee-accent text-coffee-accent hover:text-coffee-dark px-4 py-2 rounded-xl text-sm font-bold transition">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-coffee-medium rounded-2xl overflow-hidden border border-coffee-accent/10 hover:border-coffee-accent/40 transition group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&q=80&w=600" alt="حلويات وتشيز كيك" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">الحلويات والتشيز كيك</h3>
+                        <p class="text-gray-400 text-sm mb-4">أشهى أصناف الحلويات الغربية والشرقية المصنوعة بأجود المكونات.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-coffee-accent font-bold">حلويات فاخرة</span>
+                            <button class="bg-coffee-accent/10 hover:bg-coffee-accent text-coffee-accent hover:text-coffee-dark px-4 py-2 rounded-xl text-sm font-bold transition">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-coffee-medium rounded-2xl overflow-hidden border border-coffee-accent/10 hover:border-coffee-accent/40 transition group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=600" alt="ساندويتشات" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">الساندويتشات الخفيفة</h3>
+                        <p class="text-gray-400 text-sm mb-4">ساندويتشات بانيني وجريل محضرة خصيصاً لوجبات سريعة ولذيذة.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-coffee-accent font-bold">وجبات سريعة</span>
+                            <button class="bg-coffee-accent/10 hover:bg-coffee-accent text-coffee-accent hover:text-coffee-dark px-4 py-2 rounded-xl text-sm font-bold transition">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-coffee-medium rounded-2xl overflow-hidden border border-coffee-accent/10 hover:border-coffee-accent/40 transition group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&q=80&w=600" alt="مشروبات باردة وعصائر" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">المشروبات الباردة</h3>
+                        <p class="text-gray-400 text-sm mb-4">مشروبات مثلجة ومنعشة وميلك شيك تناسب أوقات الصيف والنشاط.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-coffee-accent font-bold">منعشة ومننوعة</span>
+                            <button class="bg-coffee-accent/10 hover:bg-coffee-accent text-coffee-accent hover:text-coffee-dark px-4 py-2 rounded-xl text-sm font-bold transition">اطلب الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Audio / Vibe Section (Replacing Flash Player) -->
+    <section class="py-16 bg-coffee-medium border-y border-coffee-accent/10">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-white mb-4"><i class="fa-solid fa-music text-coffee-accent ml-2"></i> أجواء البن البرازيلي</h3>
+            <p class="text-gray-300 text-sm mb-6">استمتع بالاستماع إلى نغمات موسيقية هادئة تناسب فنجان قهوتك المفضلة.</p>
+            <div class="bg-coffee-dark p-6 rounded-2xl border border-coffee-accent/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <div class="w-12 h-12 rounded-xl bg-coffee-accent/20 flex items-center justify-center text-coffee-accent text-xl">
+                        <i class="fa-solid fa-compact-disc animate-spin"></i>
+                    </div>
+                    <div class="text-right">
+                        <h4 class="text-white font-bold text-sm">مقطوعة القهوة الهادئة</h4>
+                        <p class="text-gray-400 text-xs">موسيقى خلفية استرخائية</p>
+                    </div>
+                </div>
+                <!-- HTML5 Audio Player -->
+                <audio controls class="w-full sm:w-auto accent-[#d4af37]">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    متصفحك لا يدعم مشغل الصوت.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+<section id="branches" class="py-24 bg-coffee-dark border-t border-coffee-accent/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-coffee-accent font-bold text-sm tracking-widest uppercase mb-2 block">زورنا في فروعنا</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">نحن في انتظارك</h2>
+            <p class="text-gray-400 text-sm">تفضل بزيارة أحد فروعنا الرسمية للاستمتاع بأجواء استثنائية وأجود أنواع القهوة.</p>
+        </div>
+
+        <!-- Branches Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Branch 1: Gleem -->
+            <div class="bg-coffee-medium p-8 rounded-3xl border border-coffee-accent/20 hover:border-coffee-accent transition duration-300 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-4 space-x-reverse mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-coffee-accent text-coffee-dark flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">فرع جليم</h3>
+                            <p class="text-coffee-accent text-xs">الإسكندرية</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-3"><i class="fa-solid fa-map-pin ml-2 text-coffee-accent"></i> 97 شارع عبد السلام عارف (على الترام مباشرة)</p>
+                    <p class="text-gray-300 text-sm mb-4"><i class="fa-solid fa-phone ml-2 text-coffee-accent"></i> 035829596</p>
+                </div>
+                <div class="pt-4 border-t border-white/5">
+                    <span class="text-xs text-coffee-accent/80 font-mono" dir="ltr">Gleem Branch</span>
+                </div>
+            </div>
+
+            <!-- Branch 2: Saad Zaghloul / Mansheya -->
+            <div class="bg-coffee-medium p-8 rounded-3xl border border-coffee-accent/20 hover:border-coffee-accent transition duration-300 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-4 space-x-reverse mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-coffee-accent text-coffee-dark flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">فرع المنشية</h3>
+                            <p class="text-coffee-accent text-xs">الإسكندرية</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-3"><i class="fa-solid fa-map-pin ml-2 text-coffee-accent"></i> 20 شارع صلاح سالم</p>
+                    <p class="text-gray-300 text-sm mb-4"><i class="fa-solid fa-phone ml-2 text-coffee-accent"></i> 034874705</p>
+                </div>
+                <div class="pt-4 border-t border-white/5">
+                    <span class="text-xs text-coffee-accent/80 font-mono" dir="ltr">Mansheya Branch</span>
+                </div>
+            </div>
+
+            <!-- Branch 3: Library / Shatby -->
+            <div class="bg-coffee-medium p-8 rounded-3xl border border-coffee-accent/20 hover:border-coffee-accent transition duration-300 shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center space-x-4 space-x-reverse mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-coffee-accent text-coffee-dark flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">فرع المكتبة</h3>
+                            <p class="text-coffee-accent text-xs">الإسكندرية</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-sm mb-3"><i class="fa-solid fa-map-pin ml-2 text-coffee-accent"></i> شارع بورسعيد (أمام مكتبة الإسكندرية)</p>
+                    <p class="text-gray-300 text-sm mb-4"><i class="fa-solid fa-phone ml-2 text-coffee-accent"></i> 034854056</p>
+                </div>
+                <div class="pt-4 border-t border-white/5">
+                    <span class="text-xs text-coffee-accent/80 font-mono" dir="ltr">Bibliotheca Branch</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#120a06] border-t border-coffee-accent/20 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3 space-x-reverse">
+                <div class="w-10 h-10 rounded-full bg-coffee-accent flex items-center justify-center text-coffee-dark font-900 text-xl">
+                    BC
+                </div>
+                <div>
+                    <span class="text-lg font-bold text-white">محلات البن البرازيلي</span>
+                    <span class="block text-xs text-coffee-accent">جميع الحقوق محفوظة © 2026</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-6 space-x-reverse text-gray-400">
+                <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-full bg-coffee-medium flex items-center justify-center hover:text-coffee-accent hover:border-coffee-accent border border-transparent transition">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=management0@bcs1929.com" target="_blank" class="w-10 h-10 rounded-full bg-coffee-medium flex items-center justify-center hover:text-coffee-accent hover:border-coffee-accent border border-transparent transition">
+    <i class="fa-solid fa-envelope"></i>
+</a>
+                 <a href="https://x.com/CoffeeStores" target="_blank" class="w-10 h-10 rounded-full bg-coffee-medium flex items-center justify-center hover:text-coffee-accent hover:border-coffee-accent border border-transparent transition">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
