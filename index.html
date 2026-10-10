@@ -47,7 +47,9 @@
             </div>
             <nav class="hidden md:flex items-center space-x-8 space-x-reverse text-sm font-medium">
                 <a href="#hero" class="hover:text-coffee-accent transition">الرئيسية</a>
-                <a href="#about" class="hover:text-coffee-accent transition">قصتنا</a>
+                <button onclick="toggleModal()" class="hover:text-coffee-accent transition cursor-pointer">
+    قصتنا
+</button>
                 <a href="#menu" class="hover:text-coffee-accent transition">القائمة</a>
                 <a href="#branches" class="hover:text-coffee-accent transition">فروعنا</a>
                 <a href="#contact" class="hover:text-coffee-accent transition">تواصل معنا</a>
@@ -85,9 +87,10 @@
             <a href="#menu" class="w-full sm:w-auto bg-coffee-accent text-coffee-dark px-8 py-4 rounded-xl font-bold text-base hover:bg-white transition shadow-xl">
                 تصفح القائمة الكاملة
             </a>
-            <a href="#about" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-base transition">
-                تعرف على قصتنا
-            </a>
+           <button onclick="toggleModal()" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-base transition">
+    تعرف على قصتنا
+</button>
+            
         </div>
 
     </div>
@@ -437,5 +440,65 @@
         </div>
     </footer>
 
+    
+<div id="historyModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+    <div class="bg-coffee-dark border border-coffee-accent/30 rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative p-6 sm:p-10 text-gray-200">
+        
+        
+        <button onclick="toggleModal()" class="absolute top-6 left-6 w-10 h-10 rounded-full bg-coffee-medium border border-coffee-accent/30 flex items-center justify-center text-gray-300 hover:text-coffee-accent transition">
+            <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+
+        <!-- Article Header -->
+        <div class="border-b border-coffee-accent/20 pb-6 mb-8 text-right">
+            <span class="text-coffee-accent font-bold text-xs tracking-widest uppercase block mb-2">وثيقة تاريخية وتراثية</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-2">محل البن البرازيلي في الإسكندرية.. تاريخ يتألق في فنجان قهوة ☕</h3>
+            <p class="text-sm text-coffee-accent/80">أسسه يوناني.. وماكينة عمل الكابتشينو به الأقدم في العالم</p>
+        </div>
+
+        <!-- Featured Image -->
+        <div class="mb-8 rounded-2xl overflow-hidden border border-coffee-accent/30 shadow-xl">
+            <img src="asharqeye1.560203.jpg" alt="المهندس يوسف المسيري" class="w-full h-[320px] object-cover">
+        </div>
+
+        <!-- Timeline Box -->
+        <div class="bg-coffee-medium/80 rounded-2xl p-5 border border-coffee-accent/20 mb-6 text-sm">
+            <h4 class="text-coffee-accent font-bold mb-3 flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left"></i> محطات تاريخية:</h4>
+            <ul class="space-y-2 text-gray-300">
+                <li>• <strong>1929م:</strong> افتتاح أول متجر لبيع البن المطحون في الإسكندرية.</li>
+                <li>• <strong>1959م:</strong> أدخل محمد صبحي محامص ومطاحن البن الآلية وتأسيس فروع جديدة.</li>
+                <li>• <strong>1997م:</strong> تسليم الإدارة للسيد محمد المسيري للتطوير والافتتاح.</li>
+            </ul>
+        </div>
+
+        <!-- Full Text -->
+        <div class="space-y-4 text-sm sm:text-base leading-relaxed text-gray-300 font-300">
+            <p>
+                مع بزوغ شمس كل يوم جديد، يقف المهندس يوسف المسيري - الشقيق الأكبر للكاتب والمفكر الراحل عبد الوهاب المسيري - على بوابة محله العتيق بشارع صلاح سالم، مستمتعاً برائحة البن الطازج المنبعثة من محل «البن البرازيلي».. يتلقى التحية من الغادي والقادم، فالكل يعرف المحل العريق الذي تجاوزت شهرة «الكابتشينو» الخاص به نطاق الإسكندرية.
+            </p>
+            <p>
+                كل ركن في هذا المحل يجعلك مهووساً بالقهوة، بديكورات فريدة قوامها ورق البن الأخضر وحبات البن القرمزية، وبواجهة الموزايكو الأثرية وماكينة الكابتشينو الأثرية التي يبلغ عمرها أكثر من 80 عاماً.
+            </p>
+            <p class="bg-coffee-medium/50 p-4 rounded-xl border-r-4 border-coffee-accent text-white italic">
+                «نرحب بعائلة البن البرازيلي» — الشعار الدائم لكل رواد وعشاق القهوة الأصيلة.
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-8 pt-4 border-t border-coffee-accent/20 flex justify-end">
+            <button onclick="toggleModal()" class="bg-coffee-accent text-coffee-dark px-6 py-2.5 rounded-xl font-bold text-sm hover:bg-white transition">
+                إغلاق
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- JS Code to Toggle Modal -->
+<script>
+    function toggleModal() {
+        const modal = document.getElementById('historyModal');
+        modal.classList.toggle('hidden');
+    }
+</script>
 </body>
 </html>
